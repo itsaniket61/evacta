@@ -24,12 +24,12 @@ function FooterSection() {
         <div className='h-72 w-full bg-gray-900 flex flex-col justify-center text-white text-center flex-wrap'>
             <Image src='/images/logo.png' height={200} width={200} alt='evacta logo' className='mx-auto' />
             <p className="mt-2 text-xl tracking-widest">
-                Let's Build Something Incredible Together.
+                {`Let's`} Build Something Incredible Together.
             </p>
             <ul className='flex justify-center mt-3 flex-wrap'>
-                {socialLinks.map((link) => (
+                {socialLinks.map((link,idx) => (
                     <li className='mx-2'>
-                        <Link href={link.link} target='_blank' title={link.name}><svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" fill="white" viewBox="0 0 512 512">
+                        <Link key={idx} href={link.link} target='_blank' title={link.name}><svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" fill="white" viewBox="0 0 512 512">
                             <path d={link.icon} /></svg></Link>
                     </li>
                 ))}
