@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Web Designing",
+    "img": "/images/hero-image.png",
+    "href": "/",
+    "description": "This is a sevice provided by us"
+  },
+  {
+    "name": "Backend Development",
+    "img": "/images/hero-image.png",
+    "href": "/",
+    "description": "This is a sevice provided by us"
+  },
+  {
+    "name": "Android App Development",
+    "img": "/images/hero-image.png",
+    "href": "/",
+    "description": "This is a sevice provided by us "
+  },
+  {
+    "name": "iOS Appllications Development",
+    "img": "/images/hero-image.png",
+    "href": "/",
+    "description": "This is a sevice provided by us "
+  },
+  {
+    "name": "eCommerce Platform Development",
+    "img": "/images/hero-image.png",
+    "href": "/",
+    "description": "This is a sevice provided by us "
+  },
+  {
+    "name": "Leraning Management Systems",
+    "img": "/images/hero-image.png",
+    "href": "/",
+    "description": "This is a sevice provided by us"
+  },
+  {
+    "name": "UI/UX",
+    "img": "/images/hero-image.png",
+    "href": "/",
+    "description": "This is a sevice provided by us"
+  },
+  {
+    "name": "Logo Designing",
+    "img": "/images/hero-image.png",
+    "href": "/",
+    "description": "This is a sevice provided by us"
+  },
+  {
+    "name": "SEO/Digital Marketing Services",
+    "img": "/images/hero-image.png",
+    "href": "/",
+    "description": "This is a sevice provided by us"
+  }
+]

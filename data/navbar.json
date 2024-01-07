@@ -1,0 +1,6 @@
+[
+  { "name": "Home", "href": "#", "newTab": false },
+  { "name": "Services", "href": "/services", "newTab": true },
+  { "name": "About", "href": "#", "newTab": false },
+  { "name": "Contact", "href": "#", "newTab": false }
+]
