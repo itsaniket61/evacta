@@ -29,7 +29,7 @@ function FooterSection() {
             <ul className='flex justify-center mt-3 flex-wrap'>
                 {socialLinks.map((link) => (
                     <li className='mx-2'>
-                        <Link href={link.link} target='_blank' title={title.name}><svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" fill="white" viewBox="0 0 512 512">
+                        <Link href={link.link} target='_blank' title={link.name}><svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" fill="white" viewBox="0 0 512 512">
                             <path d={link.icon} /></svg></Link>
                     </li>
                 ))}
