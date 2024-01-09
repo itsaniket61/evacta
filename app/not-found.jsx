@@ -7,7 +7,7 @@ export default function NotFound() {
             <div className="w-full">
                 <Image src="/Icons/error-404.png" height={512} width={512} className='mx-auto'/>
             </div>
-            <Link href="#" className='mt-4 py-4 px-8 rounded-md bg-gray-800 hover:bg-gray-950 text-white uppercase font-semibold'>
+            <Link href="/" className='mt-4 py-4 px-8 rounded-md bg-gray-800 hover:bg-gray-950 text-white uppercase font-semibold'>
                 Back to Home
             </Link>
         </div>
