@@ -6,7 +6,7 @@ import coreValues from '../../data/core-values.json';
 function AboutSection() {
   return (
     <div
-        className='bg-blue-500'
+        className='bg-blue-500' id="about-section"
     >
         <div className='h-full w-100 px-4 py-8 bg-blue-500 flex flex-col md:flex-row flex-wrap align-middle md:justify-start'>
             <div className='md:my-24 mx-auto md:w-2/3 justify-center md:order-2 order-2 text-center md:text-start'>
