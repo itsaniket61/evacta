@@ -34,6 +34,7 @@ function FooterSection() {
                     </li>
                 ))}
             </ul>
+            <p className='mt-2'>© 2024 <Link href='https://evacta.com' className='text-blue-500'>Evacta</Link>. All rights reserved.</p>
         </div>
     )
 }
