@@ -1,17 +1,17 @@
 [
     {
       "name": "Innovation",
-      "img": "/images/hero-image.png",
+      "img": "/Icons/about/idea.png",
       "description": "We embrace creativity and actively seek out novel solutions that will improve solutions with time."
     },
     {
       "name": "Integrity",
-      "img": "/images/hero-image.png",
+      "img": "/Icons/about/collaborate.png",
       "description": "Trust is fundamental, and we operate with transparency and honesty to provide best services from Evacta."
     },
     {
       "name": "Excellence",
-      "img": "/images/hero-image.png",
+      "img": "/Icons/about/excellence.png",
       "description": "We are dedicated to achieving excellence in every aspect of our work, from product development to customer service."
     }
   ]

@@ -23,7 +23,7 @@ function ContactSection() {
                 </div>
                 <div
                     className='mx-auto order-1 md:order-2 my-4 w-1/3'>
-                    <Image src='/images/hero-image.png' alt="hero-image" height={1080} width={1080} className='w-auto' />
+                    <Image src='/Icons/about/email.png' alt="hero-image" height={1080} width={1080} className='w-auto' />
                 </div>
             </div>
         </div>

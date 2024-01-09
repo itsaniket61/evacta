@@ -6,7 +6,7 @@ function HeroSection() {
         <div className='h-full w-100 px-4 py-16 bg-blue-500 flex flex-col md:flex-row flex-wrap align-middle md:justify-start'>
             <div
                 className='mx-auto order-1 md:order-2 my-4 w-1/3'>
-                <Image src='/images/hero-image.png' alt="hero-image" height={1080} width={1080} className='w-auto' />
+                <Image src='/Icons/hero.png' alt="hero-image" height={1080} width={1080} className='w-auto' />
             </div>
             <div className='md:my-24 mx-auto md:w-1/3 justify-center md:order-1 order-2 text-center md:text-start'>
                 <h2 className='text-white font-semibold text-5xl md:text-6xl '>IT and Software Development</h2>
