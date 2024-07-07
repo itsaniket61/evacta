@@ -7,7 +7,7 @@ import Link from 'next/link';
 function ServicesSection() {
     return (
         <div className='bg-blue-500 p-10' id="services-section">
-            <h3 className='text-white text-center md:text-5xl text-4xl font-semibold font-sans my-2'>Services</h3>
+            {/* <h3 className='text-white text-center md:text-5xl text-4xl font-semibold font-sans my-2'>Services</h3> */}
             <Card>
                 {
                     servicesData.map((service, idx) => (

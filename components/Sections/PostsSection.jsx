@@ -9,9 +9,9 @@ function PostsSection() {
 
   return (
     <div className='bg-blue-500 p-10' id='blog-section'>
-      <h3 className='text-white text-center md:text-5xl text-4xl font-semibold font-sans my-2'>
+      {/* <h3 className='text-white text-center md:text-5xl text-4xl font-semibold font-sans my-2'>
         Blog Posts
-      </h3>
+      </h3> */}
       <Card className='bg-gray-800'>
         {Object.keys(posts)
           .slice(0, 5) // Limit to only 5 posts
