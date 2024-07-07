@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "type": "npm",
+            "name": "Install Dependencies",
+            "command": "run",
+            "scripts": "install",
+        },
+       {
+           "type": "npm",
+           "name": "Start Dev Server",
+           "command": "run",
+           "scripts": "dev",
+       },
+       
+    ]
+}
