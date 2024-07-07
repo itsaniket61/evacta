@@ -12,39 +12,24 @@ function PostsSection() {
       {/* <h3 className='text-white text-center md:text-5xl text-4xl font-semibold font-sans my-2'>
         Blog Posts
       </h3> */}
-      <Card className='bg-gray-800'>
-        {Object.keys(posts)
-          .slice(0, 6) // Limit to only 5 posts
-          .map((post, idx) => (
-            <div
-              className='group text-white text-center md:justify-stretch md:w-1/4 
-                          bg-gray-800 rounded my-3 mr-1 hover:bg-gray-950 hover:scale-105 hover:rounded hover:shadow-md transition-all duration-500 px-4 py-8'
-              key={idx}
-            >
-              <div className='w-1/2 mx-auto'>
-                <Image
-                  src='/images/logo.png'
-                  width={100}
-                  height={100}
-                  alt='post'
-                  className='w-full'
-                />
-              </div>
-              <h4 className='my-2 text-3xl'>{posts[post].title}</h4>
-              <p className='truncate'>
-                {truncateDescription(posts[post].description)}
-              </p>
-              <div className='my-6'></div>
-              <Link
-                href={`/blog/` + post}
-                className='py-4 px-8 rounded-md bg-white hover:bg-white text-gray-900 
-                  uppercase font-semibold'
-              >
-                Read More
-              </Link>
-            </div>
-          ))}
-      </Card>
+      <Card>
+                {
+                    Object.keys(posts).slice(0,6).map((postKey, idx) => {
+                      const post = posts[postKey];  
+                      return <div className='group text-white text-center md:justify-stretch md:w-1/4 
+                        bg-gray-800 rounded my-3 mr-1 hover:bg-gray-950 hover:scale-105 hover:rounded hover:shadow-md transition-all duration-500 px-4 py-8' key={idx}>
+                            <div className="w-1/2 mx-auto">
+                                <Image src={'/images/logo.png'} width={1080} height={1080} alt='service' className='w-full' />
+                            </div>
+                            <h4 className='my-2 text-3xl'>{post.title}</h4>
+                            <p>{post.description}</p>
+                            <div className="my-6"></div>
+                            <Link href={`/blog/${postKey}`} className='py-4 px-8 rounded-md bg-white hover:bg-white text-gray-900 
+                uppercase font-semibold'>Read More</Link>
+                        </div>
+                    })
+                }
+            </Card>
     </div>
   );
 
