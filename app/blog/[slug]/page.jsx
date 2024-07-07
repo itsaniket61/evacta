@@ -34,6 +34,7 @@ export default function BlogPage({ params }) {
         <meta property='twitter:title' content={post.title} />
         <meta property='twitter:description' content={post.description} />
         <meta name='keywords' content={post.keywords} />
+        <title>{post.title}</title>
       </Head>
       <div
         style={{ backgroundImage: "url('/images/Blog Banner.png')" }}
