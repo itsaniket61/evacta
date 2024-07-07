@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import './markdown.css';
 import Navbar from '@/components/Utils/Navbar'
+import FooterSection from '@/components/Sections/FooterSection';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,12 +13,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <meta name="google-adsense-account" content="ca-pub-4911910001881650"/>
+    <html lang='en'>
+      <meta name='google-adsense-account' content='ca-pub-4911910001881650' />
       <body className={inter.className}>
-        <Navbar/>
+        <Navbar />
         {children}
+        <FooterSection />
       </body>
     </html>
-  )
+  );
 }

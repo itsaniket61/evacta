@@ -69,8 +69,6 @@ export default function BlogPage({ params }) {
           </div>
         </div>
       </div>
-
-      <FooterSection />
     </>
   );
 }
