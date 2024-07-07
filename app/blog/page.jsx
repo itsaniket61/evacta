@@ -7,10 +7,10 @@ function Blog() {
     <section className='text-gray-600 body-font overflow-hidden'>
       <div className='container px-5 py-24 mx-auto'>
         <div className='-my-8 divide-y-2 divide-gray-100'>
-          {Object.keys(posts).map((postKey) => {
+          {Object.keys(posts).map((postKey,idx) => {
             const post = posts[postKey];
             return (
-              <div className='py-8 flex flex-wrap md:flex-nowrap'>
+              <div className='py-8 flex flex-wrap md:flex-nowrap' key={idx}>
                 <div className='md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col'>
                   <span className='font-semibold title-font text-gray-700'>
                     {post.category}
