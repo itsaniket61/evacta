@@ -2,6 +2,11 @@ import React from 'react'
 import posts from '../../data/posts.json';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Blog - The blog from Evacta',
+  description: 'Blog - The blog from Evacta',
+};
+
 function Blog() {
   return (
     <section className='text-gray-600 body-font overflow-hidden'>
