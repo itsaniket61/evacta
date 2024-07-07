@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+    <loc>https://evacta.com/blog</loc>
+    <lastmod>2024-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://evacta.com/blog/importance-of-website-for-local-business</loc>
     <lastmod>2024-07-07</lastmod>
@@ -44,6 +50,18 @@
   </url>
   <url>
     <loc>https://evacta.com/blog/how-to-grow-your-business-online</loc>
+    <lastmod>2024-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://evacta.com/blog/leveraging-social-media-marketing-for-small-businesses</loc>
+    <lastmod>2024-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://evacta.com/blog/top-reasons-every-small-business-needs-website</loc>
     <lastmod>2024-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
