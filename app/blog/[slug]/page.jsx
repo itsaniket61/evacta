@@ -20,7 +20,7 @@ export default function BlogPage({ params }) {
       >
         <div className='absolute inset-0 bg-black bg-opacity-50'></div>
         <div className='p-4 relative text-center w-full flex flex-col justify-center items-center h-full'>
-          <h1 className='text-white text-4xl font-extrabold'>{post.title}</h1>
+          <h1 className='text-white text-2xl md:text-4xl font-extrabold'>{post.title}</h1>
           <h3 className='mt-2 text-gray-50'>
             <Link href={post.author.href}>
               <i>{post.author.name}</i>
