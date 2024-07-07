@@ -1,7 +1,7 @@
 [
-  { "name": "Home", "href": "#", "newTab": false },
-  { "name": "Services", "href": "#services-section", "newTab": false },
-  { "name": "About", "href": "#about-section", "newTab": false },
-  { "name": "Blog", "href": "#blog-section", "newTab": false },
-  { "name": "Contact", "href": "#contact-section", "newTab": false }
+  { "name": "Home", "href": "/", "newTab": false },
+  { "name": "Services", "href": "/#services-section", "newTab": false },
+  { "name": "About", "href": "/#about-section", "newTab": false },
+  { "name": "Blog", "href": "/blog", "newTab": false },
+  { "name": "Contact", "href": "/#contact-section", "newTab": false }
 ]

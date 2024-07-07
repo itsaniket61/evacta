@@ -14,7 +14,7 @@ function PostsSection() {
       </h3> */}
       <Card className='bg-gray-800'>
         {Object.keys(posts)
-          .slice(0, 5) // Limit to only 5 posts
+          .slice(0, 6) // Limit to only 5 posts
           .map((post, idx) => (
             <div
               className='group text-white text-center md:justify-stretch md:w-1/4 
