@@ -3,7 +3,6 @@ import postData from '../../../data/posts.json';
 import Head from 'next/head';
 import SidebarAd from '@/components/Ads/SidebarAd';
 import Link from 'next/link';
-import FooterSection from '@/components/Sections/FooterSection';
 
 export default function BlogPage({ params }) {
   const postSlug = params['slug'];
@@ -15,27 +14,6 @@ export default function BlogPage({ params }) {
 
   return (
     <>
-      <Head>
-        <title>{post.title}</title>
-        <meta name='description' content={post.description} />
-        <meta property='og:title' content={post.title} />
-        <meta property='og:description' content={post.description} />
-        <meta property='og:type' content='website' />
-        <meta
-          property='og:url'
-          content={`https://evacta.com/blog/${postSlug}`}
-        />
-        <meta property='og:image' content={post.image} />
-        <meta property='twitter:card' content='summary_large_image' />
-        <meta
-          property='twitter:url'
-          content={`https://evacta.com/blog/${postSlug}`}
-        />
-        <meta property='twitter:title' content={post.title} />
-        <meta property='twitter:description' content={post.description} />
-        <meta name='keywords' content={post.keywords} />
-        <title>{post.title}</title>
-      </Head>
       <div
         style={{ backgroundImage: "url('/images/Blog Banner.png')" }}
         className='relative h-72 bg-cover bg-center'
@@ -78,4 +56,15 @@ export async function generateStaticParams() {
   return Object.keys(postData).map((slug) => ({
     slug,
   }));
+}
+
+export async function generateMetadata({params, searchParams}) {
+  const slug = params.slug;
+  const post = postData[slug];
+  return {
+    title: post.title,
+    description: post.description,
+    keywords: post.keywords.split(','),
+    author: post.author.name
+  };
 }
