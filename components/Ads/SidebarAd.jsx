@@ -9,7 +9,7 @@ const SidebarAd = ({ adId }) => {
     <div className=''>
       <Link href={href} target='_blank' rel='noopener noreferrer' title={title}>
         <div
-          className='p-4 mb-6 text-center transition-transform transform hover:scale-105'
+          className='p-4 mb-6 text-center transition-transform transform'
           style={{ width: '300px' }}
         >
           <div className='rounded-lg overflow-hidden'>
