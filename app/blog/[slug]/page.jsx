@@ -1,20 +1,25 @@
 import { marked } from 'marked';
 import postData from '../../../data/posts.json';
+import bannerImgs from '../../../data/banners.json';
 import SidebarAd from '@/components/Ads/SidebarAd';
 import Link from 'next/link';
 
 export default function BlogPage({ params }) {
   const postSlug = params['slug'];
   const post = postData[postSlug];
-    const getMarkdownText = (markdownText) => {
-      const rawMarkup = marked(markdownText, { sanitize: true });
-      return { __html: rawMarkup };
-    };
+  const getMarkdownText = (markdownText) => {
+    const rawMarkup = marked(markdownText, { sanitize: true });
+    return { __html: rawMarkup };
+  };
 
   return (
     <>
       <div
-        style={{ backgroundImage: "url('/images/Blog Banner.png')" }}
+        style={{
+          backgroundImage: `url('${
+            bannerImgs[Math.floor(Math.random() * bannerImgs.length)]
+          }')`,
+        }}
         className='relative h-72 bg-cover bg-center'
       >
         <div className='absolute inset-0 bg-black bg-opacity-50'></div>
@@ -45,12 +50,13 @@ export default function BlogPage({ params }) {
             <div className='p-2'>
               <div class='container px-5 py-24 mx-auto'>
                 <div class='flex flex-wrap -m-4'>
-                  {
-                    Object.keys(postData).slice(0,4).map((postKey, idx) => {
+                  {Object.keys(postData)
+                    .slice(0, 4)
+                    .map((postKey, idx) => {
                       if (postKey !== postSlug) {
                         const otherPost = postData[postKey];
                         return (
-                            <div class='p-4 lg:w-1/3' key={idx}>
+                          <div class='p-4 lg:w-1/3' key={idx}>
                             <div class=' hover:shadow-lg h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative'>
                               <h2 class='tracking-widest text-xs title-font font-medium text-gray-400 mb-1'>
                                 {otherPost.category}
@@ -61,7 +67,10 @@ export default function BlogPage({ params }) {
                               <p class='leading-relaxed mb-3'>
                                 {otherPost.description}
                               </p>
-                              <Link class='text-indigo-500 inline-flex items-center' href={`/blog/${postKey}`}>
+                              <Link
+                                class='text-indigo-500 inline-flex items-center'
+                                href={`/blog/${postKey}`}
+                              >
                                 Learn More
                                 <svg
                                   class='w-4 h-4 ml-2'
@@ -80,8 +89,7 @@ export default function BlogPage({ params }) {
                           </div>
                         );
                       }
-                    })
-                  }
+                    })}
                 </div>
               </div>
             </div>
