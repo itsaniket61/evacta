@@ -11,7 +11,7 @@ function Blog() {
   return (
     <>
       <div
-        style={{ backgroundImage: "url('/images/Blog Banner.png')" }}
+        style={{ backgroundImage: "url('/images/Banners/banner5.png')" }}
         className='relative h-72 bg-cover bg-center'
       >
         <div className='absolute inset-0 '></div>
