@@ -18,9 +18,6 @@ function PostsSection() {
                       const post = posts[postKey];  
                       return <div className='group text-white text-center md:justify-stretch md:w-1/4 
                         bg-gray-800 rounded my-3 mr-1 hover:bg-gray-950 hover:scale-105 hover:rounded hover:shadow-md transition-all duration-500 px-4 py-8' key={idx}>
-                            <div className="w-1/2 mx-auto">
-                                <Image src={'/images/logo.png'} width={1080} height={1080} alt='service' className='w-full' />
-                            </div>
                             <h4 className='my-2 text-3xl'>{post.title}</h4>
                             <p>{post.description}</p>
                             <div className="my-6"></div>
