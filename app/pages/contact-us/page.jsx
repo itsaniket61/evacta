@@ -17,7 +17,7 @@ function ContactUsPage() {
       <p className='text-lg py-2'>
         We value your feedback and are here to assist you with any inquiries or
         issues you may have. Whether you have questions about our services, need
-        support, or want to discuss potential collaborations, we're here to
+        support, or want to discuss potential collaborations, we&apos;re here to
         help.
       </p>
       <p className='text-lg py-2'>
