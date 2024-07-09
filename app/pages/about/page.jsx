@@ -40,8 +40,8 @@ function AboutPage() {
         At Evacta, we believe in forging lasting partnerships with our clients.
         We work closely with you to understand your goals and deliver solutions
         that exceed your expectations. Our mission is to empower your business
-        with the tools and technologies needed to thrive in today's competitive
-        landscape.
+        with the tools and technologies needed to thrive in today&apos;s
+        competitive landscape.
       </p>
       <p className='text-lg py-2'>
         Join Evacta on the journey to digital excellence. Contact us today to
