@@ -55,43 +55,6 @@ function DisclaimerPage() {
           info@evacta.com
         </Link>
       </p>
-      <p className='text-lg py-2'>
-        <strong>Phone:</strong> +1-800-123-4567 (Mon-Fri, 9 AM - 6 PM EST)
-      </p>
-      <p className='text-lg py-2'>
-        <strong>Address:</strong> 123 Evacta Lane, Tech City, Innovate State,
-        12345
-      </p>
-      <h3 className='text-3xl font-semibold py-4'>Follow Us</h3>
-      <p className='text-lg py-2'>
-        Stay updated with our latest news and updates through our social media
-        channels:
-      </p>
-      <ul className='list-disc list-inside'>
-        <li>
-          <Link href='https://facebook.com/evacta' className='text-blue-400'>
-            Facebook
-          </Link>
-        </li>
-        <li>
-          <Link href='https://twitter.com/evacta' className='text-blue-400'>
-            Twitter
-          </Link>
-        </li>
-        <li>
-          <Link
-            href='https://linkedin.com/company/evacta'
-            className='text-blue-400'
-          >
-            LinkedIn
-          </Link>
-        </li>
-        <li>
-          <Link href='https://instagram.com/evacta' className='text-blue-400'>
-            Instagram
-          </Link>
-        </li>
-      </ul>
     </div>
   );
 }
