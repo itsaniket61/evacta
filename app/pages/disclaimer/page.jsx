@@ -35,8 +35,8 @@ function DisclaimerPage() {
       </ul>
       <p className='text-lg py-2'>
         Please send this information to:{' '}
-        <Link href='mailto:info@evacta.com' className='text-blue-400'>
-          info@evacta.com
+        <Link href='mailto:contact@evacta.com' className='text-blue-400'>
+          contact@evacta.com
         </Link>
       </p>
       <p className='text-lg py-2'>
@@ -51,8 +51,8 @@ function DisclaimerPage() {
       </p>
       <p className='text-lg py-2'>
         <strong>Email:</strong>{' '}
-        <Link href='mailto:info@evacta.com' className='text-blue-400'>
-          info@evacta.com
+        <Link href='mailto:contact@evacta.com' className='text-blue-400'>
+          contact@evacta.com
         </Link>
       </p>
     </div>
