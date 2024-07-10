@@ -27,7 +27,7 @@ function PrivacyPolicyPage() {
       <p>
         If you have additional questions or require more information about our
         Privacy Policy, do not hesitate to contact us via email at{' '}
-        <b>info@evacta.com</b>
+        <b>contact@evacta.com</b>
       </p>
 
       <h2 className='text-3xl font-semibold py-4'>Log Files</h2>
