@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.13",
+    "evacta": "file:",
     "framer-motion": "^10.17.9",
     "github-markdown-css": "^5.6.1",
     "js-yaml": "^4.1.0",
