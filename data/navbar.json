@@ -1,9 +1,0 @@
-[
-  { "name": "Home", "href": "/", "newTab": false },
-  { "name": "Services", "href": "/#services-section", "newTab": false },
-  { "name": "Blog", "href": "/blog", "newTab": false },
-  { "name": "Contact", "href": "/pages/contact-us", "newTab": false },
-  {"name": "About", "href": "/pages/about", "newTab": false},
-  { "name": "Privacy Policy", "href": "/pages/privacy-policy", "newTab": false},
-  { "name": "Disclaimer", "href": "/pages/disclaimer", "newTab": false}
-]

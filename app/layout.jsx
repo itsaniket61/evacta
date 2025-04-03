@@ -1,31 +1,28 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
-import './markdown.css';
-import Navbar from '@/components/Utils/Navbar'
-import FooterSection from '@/components/Sections/FooterSection';
-import Script from 'next/script';
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata = {
-  title: `Evacta - Let's Build Something Incredible Together.`,
-  description: 'Discover unparalleled digital solutions with Evacta, your trusted partner in technology. Elevate your business with innovative software services designed to enhance efficiency and drive growth. Explore our range of solutions tailored to meet the evolving needs of modern enterprises. Join us on the journey to digital excellence. Contact Evacta today',
-}
+  title: "Evacta",
+  description: "Transforming businesses with cutting-edge IT solutions.",
+};
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en'>
-      <meta name='google-adsense-account' content='ca-pub-4911910001881650' />
-      <Script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4911910001881650`}
-          strategy="lazyOnload"
-          crossOrigin="anonymous"
-        />
-      <body className={inter.className}>
-        <Navbar />
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         {children}
-        <FooterSection />
       </body>
     </html>
   );

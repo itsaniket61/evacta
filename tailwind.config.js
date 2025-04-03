@@ -1,13 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./app/**/*.{js,jsx}",
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        black: "#1a1a1a",
+        white: "#ffffff",
+      },
+    },
   },
-  plugins: [require('@tailwindcss/typography')],
-  darkMode: 'false',
+  plugins: [],
 };

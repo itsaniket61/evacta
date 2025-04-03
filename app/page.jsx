@@ -1,20 +1,24 @@
-import AboutSection from '@/components/Sections/AboutSection'
-import ClientsSection from '@/components/Sections/ClientsSection'
-import ContactSection from '@/components/Sections/ContactSection'
-import FooterSection from '@/components/Sections/FooterSection'
-import HeroSection from '@/components/Sections/HeroSection'
-import PostsSection from '@/components/Sections/PostsSection'
-import ServicesSection from '@/components/Sections/ServicesSection'
+"use client";
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Services from './components/Services';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Clients from './components/Clients';
+import Products from './components/Products';
 
 export default function Home() {
   return (
-  <main className='font-sans'>
-    <HeroSection/>
-    <ServicesSection/>
-    <AboutSection/>
-    <ClientsSection/>
-    <PostsSection/>
-    <ContactSection/>
-  </main>
-  )
+    <div className='min-h-screen bg-black'>
+      <Navbar />
+      <Hero />
+      <About />
+      <Products/>
+      <Services />
+      <Clients />
+      <Contact />
+      <Footer />
+    </div>
+  );
 }
